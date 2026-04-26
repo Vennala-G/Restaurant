@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore our full menu – North Indian, South Indian, Biryani, Starters and more at Shreyas Family Restaurant, Chikkaballapur." />
+  <title>Menu – Shreyas Family Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+  <style>
+    /* Filter Tabs */
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 36px 0 52px;
+    }
+    .filter-btn {
+      padding: 10px 22px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 50px;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .price-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="name">Shreyas</span>
+        <span class="tagline-small">Family Restaurant</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ══════════════════════════════════════════ -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-tag">Our Offerings</div>
+      <h1 class="section-title">The Shreyas Menu</h1>
+      <div class="divider" style="margin:18px auto 20px;"></div>
+      <p class="section-subtitle" style="margin:0 auto; text-align:center;">
+        From North Indian curries to Andhra-style starters, every dish is cooked with love and spice.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ MENU ═══════════════════════════════════════════════ -->
+  <section class="menu-section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">🍽️ All</button>
+        <button class="filter-btn" data-filter="north-indian">🫕 North Indian</button>
+        <button class="filter-btn" data-filter="south-indian">🍛 South Indian</button>
+        <button class="filter-btn" data-filter="biryani">🍚 Biryani</button>
+        <button class="filter-btn" data-filter="starters">🍗 Starters</button>
+      </div>
+
+      <p class="price-note">* All prices are inclusive of taxes. ● Veg &nbsp; ● Non-Veg</p>
+
+      <!-- ── NORTH INDIAN ─────────────────────────────────── -->
+      <div class="menu-category reveal" data-category="north-indian">
+        <div class="category-header">
+          <div class="category-icon">🫕</div>
+          <h2 class="category-title">North Indian</h2>
+          <div class="category-line"></div>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&q=80" alt="Paneer Butter Masala" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Paneer Butter Masala</div>
+              <p class="menu-item-desc">Soft paneer cubes in a rich, creamy tomato-based gravy with aromatic spices.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹160</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80" alt="Dal Makhani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Dal Makhani</div>
+              <p class="menu-item-desc">Slow-cooked black lentils simmered overnight with butter, cream and spices.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹130</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=500&q=80" alt="Butter Chicken" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Butter Chicken</div>
+              <p class="menu-item-desc">Tender chicken in a velvety tomato-cashew gravy with a hint of cream.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹200</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&q=80" alt="Naan Basket" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Naan / Roti</div>
+              <p class="menu-item-desc">Soft, fluffy naan baked in tandoor. Available plain, butter or garlic.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹25</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&q=80" alt="Chicken Curry" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Chicken Curry</div>
+              <p class="menu-item-desc">Hearty home-style chicken curry with freshly ground spice paste.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹180</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1631452180775-6d5e6f5ebb10?w=500&q=80" alt="Shahi Paneer" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Shahi Paneer</div>
+              <p class="menu-item-desc">Royal paneer dish cooked in a cashew and cream-based gravy with mild spices.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹170</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /north-indian -->
+
+      <!-- ── SOUTH INDIAN ─────────────────────────────────── -->
+      <div class="menu-category reveal" data-category="south-indian">
+        <div class="category-header">
+          <div class="category-icon">🍛</div>
+          <h2 class="category-title">South Indian</h2>
+          <div class="category-line"></div>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&q=80" alt="Ghee Rice" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Ghee Rice</div>
+              <p class="menu-item-desc">Fragrant basmati rice cooked in pure desi ghee with cashews and fried onions.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹110</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&q=80" alt="Masala Dosa" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Masala Dosa</div>
+              <p class="menu-item-desc">Crispy golden crepe stuffed with spiced potato filling. Served with sambar and chutneys.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹80</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&q=80" alt="Meals" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Full Meals (Thali)</div>
+              <p class="menu-item-desc">Rice, 2 curries, dal, papad, pickle, rasam, and dessert. Classic South Indian spread.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹120</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&q=80" alt="Guntur Chicken" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Guntur Chicken</div>
+              <p class="menu-item-desc">Fiery Andhra-style dry chicken with whole Guntur chillies. A bold, blazing special.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹220</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80" alt="Sambar Rice" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Sambar Rice</div>
+              <p class="menu-item-desc">Comforting lentil stew mixed with rice and topped with ghee. Pure soul food.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹70</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1645177628172-a94c1f96debb?w=500&q=80" alt="Mutton Curry" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Mutton Curry</div>
+              <p class="menu-item-desc">Slow-cooked tender mutton in a dark, spice-rich Andhra style gravy.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹250</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /south-indian -->
+
+      <!-- ── BIRYANI ───────────────────────────────────────── -->
+      <div class="menu-category reveal" data-category="biryani">
+        <div class="category-header">
+          <div class="category-icon">🍚</div>
+          <h2 class="category-title">Biryani</h2>
+          <div class="category-line"></div>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&q=80" alt="Chicken Biryani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Chicken Biryani</div>
+              <p class="menu-item-desc">Dum-cooked layers of saffron basmati and tender chicken. Served with raita and mirchi salan.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹180</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80" alt="Mutton Biryani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Mutton Biryani</div>
+              <p class="menu-item-desc">Slow-cooked mutton on the bone with fragrant rice. Rich, deep-spiced and unmissable.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹230</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&q=80" alt="Veg Biryani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Veg Biryani</div>
+              <p class="menu-item-desc">Seasonal vegetables and paneer layered with spiced basmati in a fragrant dum.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹140</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&q=80" alt="Egg Biryani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Egg Biryani</div>
+              <p class="menu-item-desc">Spiced rice cooked with whole boiled eggs. Great value, great taste.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹130</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1645177628172-a94c1f96debb?w=500&q=80" alt="Prawn Biryani" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Prawn Biryani</div>
+              <p class="menu-item-desc">Juicy prawns marinated and cooked in coastal-style biryani masala with basmati.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹260</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80" alt="Raita" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Raita & Mirchi Salan</div>
+              <p class="menu-item-desc">Classic accompaniments — cool yoghurt raita and spicy green chilli curry.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹30</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /biryani -->
+
+      <!-- ── STARTERS ─────────────────────────────────────── -->
+      <div class="menu-category reveal" data-category="starters">
+        <div class="category-header">
+          <div class="category-icon">🍗</div>
+          <h2 class="category-title">Starters</h2>
+          <div class="category-line"></div>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80" alt="Tandoori Chicken" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Tandoori Chicken (Half)</div>
+              <p class="menu-item-desc">Yoghurt-marinated chicken, roasted in a clay tandoor to smoky, charred glory.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹200</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&q=80" alt="Chicken 65" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Chicken 65</div>
+              <p class="menu-item-desc">Crispy, deep-fried spiced chicken bites. The restaurant's most-ordered starter.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹160</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&q=80" alt="Chilli Chicken" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Chilli Chicken</div>
+              <p class="menu-item-desc">Indo-Chinese style tossed chicken with capsicum, onion and green chillies.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹180</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&q=80" alt="Paneer Tikka" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Paneer Tikka</div>
+              <p class="menu-item-desc">Marinated paneer cubes skewered and grilled in tandoor with peppers and onions.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹160</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1615361200141-f45040f367be?w=500&q=80" alt="Gobi 65" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Gobi 65</div>
+              <p class="menu-item-desc">Crispy cauliflower florets tossed in a zesty spiced batter. Fan favourite.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹120</span>
+                <div class="veg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&q=80" alt="Seekh Kebab" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <div class="menu-item-name">Seekh Kebab</div>
+              <p class="menu-item-desc">Minced lamb and spice mix skewered and grilled. Smoky, succulent and satisfying.</p>
+              <div class="menu-item-footer">
+                <span class="menu-price">₹190</span>
+                <div class="nonveg-badge"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /starters -->
+
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="name">Shreyas</div>
+          <p>Family Restaurant · Vapasandra<br>Where every visit feels like a homecoming. Good food, warm hearts, honest prices.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Hours & Location</h5>
+          <p>🕐 11:00 AM – 11:00 PM<br>Daily</p>
+          <br>
+          <p>📍 B.B Road, Opp. Kothanoor Gate<br>Vapasandra, Chikkaballapur</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span class="accent">Shreyas Family Restaurant</span>. All rights reserved.</p>
+        <p>Made with ❤️ in Chikkaballapur</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a
+    href="https://wa.me/919999999999?text=Hi%20Shreyas%20Restaurant!%20I'd%20like%20to%20place%20an%20order."
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener"
+    aria-label="Order on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <span class="whatsapp-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </span>
+    <span>Order Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

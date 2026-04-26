@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shreyas Family Restaurant – Affordable, delicious food near SJCIT, Chikkaballapur. Ghee Rice, Biryani, Tandoori Chicken and more." />
+  <title>Shreyas Family Restaurant – Chikkaballapur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="name">Shreyas</span>
+        <span class="tagline-small">Family Restaurant</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-line"></div>
+        <span>Est. in Chikkaballapur</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="highlight">Shreyas</span><br>
+        Family Restaurant
+      </h1>
+      <p class="hero-tagline">Hidden Gem Near SJCIT – Taste That Stays</p>
+
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-primary">
+          <span>🍽️</span> View Menu
+        </a>
+        <a href="contact.html" class="btn btn-outline">
+          <span>📍</span> Visit Us
+        </a>
+      </div>
+
+      <div class="hero-badges">
+        <div class="badge">
+          <span class="badge-icon">⏰</span>
+          <span class="badge-text">Open 11AM – 11PM</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">👨‍👩‍👧</span>
+          <span class="badge-text">Family Friendly</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">💰</span>
+          <span class="badge-text">Student Friendly Prices</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══ POPULAR DISHES ════════════════════════════════════ -->
+  <section class="popular">
+    <div class="container">
+      <div class="popular-header reveal">
+        <div class="section-tag">Our Specialties</div>
+        <h2 class="section-title">Dishes You'll Come Back For</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+          Every plate tells a story of bold spices, fresh ingredients,
+          and the warmth of home cooking — crafted to keep you coming back.
+        </p>
+      </div>
+
+      <div class="dishes-grid">
+        <!-- Ghee Rice -->
+        <div class="dish-card reveal reveal-delay-1">
+          <div class="dish-img">
+            <img
+              src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80"
+              alt="Ghee Rice"
+              loading="lazy"
+            />
+            <span class="dish-tag">Bestseller</span>
+          </div>
+          <div class="dish-info">
+            <h3 class="dish-name">Ghee Rice</h3>
+            <p class="dish-desc">Fragrant basmati rice slow-cooked in pure desi ghee with whole spices. Comfort in every grain.</p>
+          </div>
+        </div>
+
+        <!-- Tandoori Chicken -->
+        <div class="dish-card reveal reveal-delay-2">
+          <div class="dish-img">
+            <img
+              src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80"
+              alt="Tandoori Chicken"
+              loading="lazy"
+            />
+            <span class="dish-tag">Must Try</span>
+          </div>
+          <div class="dish-info">
+            <h3 class="dish-name">Tandoori Chicken</h3>
+            <p class="dish-desc">Marinated overnight in yoghurt & spices, roasted to smoky, charred perfection in a clay oven.</p>
+          </div>
+        </div>
+
+        <!-- Guntur Chicken -->
+        <div class="dish-card reveal reveal-delay-3">
+          <div class="dish-img">
+            <img
+              src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=600&q=80"
+              alt="Guntur Chicken"
+              loading="lazy"
+            />
+            <span class="dish-tag">Spicy Special</span>
+          </div>
+          <div class="dish-info">
+            <h3 class="dish-name">Guntur Chicken</h3>
+            <p class="dish-desc">A fiery Andhra-style dry chicken dish packed with Guntur red chillies — bold, hot, unforgettable.</p>
+          </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="dish-card reveal reveal-delay-4">
+          <div class="dish-img">
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80"
+              alt="Biryani"
+              loading="lazy"
+            />
+            <span class="dish-tag">Chef's Pick</span>
+          </div>
+          <div class="dish-info">
+            <h3 class="dish-name">Biryani</h3>
+            <p class="dish-desc">Dum-cooked layers of saffron rice and tender meat, sealed with dough and slow-steamed to aromatic glory.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:44px;" class="reveal">
+        <a href="menu.html" class="btn btn-primary">Explore Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTRO ═════════════════════════════════════════════ -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+            alt="Restaurant ambiance"
+          />
+          <div class="intro-image-badge">
+            <div class="num">500+</div>
+            <div class="lbl">Happy Diners/Day</div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="section-tag">Our Story</div>
+          <h2 class="section-title">Where Every Meal Feels Like Home</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Nestled on B.B Road, Vapasandra, Shreyas Family Restaurant has been the go-to spot for students from SJCIT and families from across Chikkaballapur. We believe great food shouldn't cost a fortune — just great ingredients, honest cooking, and a smile.
+          </p>
+
+          <div class="intro-features">
+            <div class="intro-feature">
+              <div class="feature-icon">⚡</div>
+              <div class="feature-text">
+                <h4>Quick Service</h4>
+                <p>Fast tables, hot plates — we respect your time.</p>
+              </div>
+            </div>
+            <div class="intro-feature">
+              <div class="feature-icon">💸</div>
+              <div class="feature-text">
+                <h4>Affordable Prices</h4>
+                <p>Student-friendly billing without compromising taste.</p>
+              </div>
+            </div>
+            <div class="intro-feature">
+              <div class="feature-icon">👨‍🍳</div>
+              <div class="feature-text">
+                <h4>Fresh Daily Cooking</h4>
+                <p>Everything is prepared fresh every morning. No shortcuts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="name">Shreyas</div>
+          <p>Family Restaurant · Vapasandra<br>Where every visit feels like a homecoming. Good food, warm hearts, honest prices.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Hours & Location</h5>
+          <p>🕐 11:00 AM – 11:00 PM<br>Daily</p>
+          <br>
+          <p>📍 B.B Road, Opp. Kothanoor Gate<br>Vapasandra, Chikkaballapur</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span class="accent">Shreyas Family Restaurant</span>. All rights reserved.</p>
+        <p>Made with ❤️ in Chikkaballapur</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a
+    href="https://wa.me/919999999999?text=Hi%20Shreyas%20Restaurant!%20I'd%20like%20to%20place%20an%20order."
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener"
+    aria-label="Order on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <span class="whatsapp-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </span>
+    <span>Order Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

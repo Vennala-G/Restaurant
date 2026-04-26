@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Shreyas Family Restaurant – B.B Road, Vapasandra, Chikkaballapur. Open 11AM to 11PM daily." />
+  <title>Contact – Shreyas Family Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+  <style>
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-top: 8px;
+    }
+    .hours-row {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      padding: 4px 0;
+    }
+    .hours-row.today {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .open-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(76, 175, 80, 0.12);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #4caf50;
+      margin-top: 6px;
+    }
+    .open-dot {
+      width: 7px; height: 7px;
+      background: #4caf50;
+      border-radius: 50%;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .cta-strip {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-soft);
+      padding: 70px 0;
+      text-align: center;
+      margin-top: 0;
+    }
+    .cta-strip .section-title { margin-bottom: 10px; }
+    .cta-strip .section-subtitle { margin: 0 auto 32px; text-align: center; }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .directions-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent);
+      border: 1.5px solid var(--border);
+      background: var(--accent-glow);
+      transition: var(--transition);
+    }
+    .directions-link:hover {
+      background: rgba(232,160,48,0.2);
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="name">Shreyas</span>
+        <span class="tagline-small">Family Restaurant</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ══════════════════════════════════════════ -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-tag">Find Us</div>
+      <h1 class="section-title">Visit Shreyas</h1>
+      <div class="divider" style="margin:18px auto 20px;"></div>
+      <p class="section-subtitle" style="margin:0 auto; text-align:center;">
+        We're easy to find, hard to forget. Come hungry, leave happy.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT SECTION ════════════════════════════════════ -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Cards -->
+        <div class="contact-info-cards">
+
+          <div class="info-card reveal">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>
+                B.B Road, Opposite Kothanoor Gate<br>
+                Vapasandra, Chikkaballapur<br>
+                Karnataka – 562101<br>
+                <em style="font-size:0.82rem; color:var(--accent);">(Near SJCIT College)</em>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card reveal reveal-delay-1">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p><strong style="color:var(--text-primary);">Every Day</strong></p>
+              <p>11:00 AM – 11:00 PM</p>
+              <div class="open-badge">
+                <div class="open-dot"></div>
+                Open Now (11AM–11PM)
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card reveal reveal-delay-2">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>
+                Call us to reserve a table or enquire about bulk orders.<br>
+                <a href="tel:+919999999999" style="color:var(--accent); font-weight:600;">+91 99999 99999</a>
+                <br>
+                <span style="font-size:0.78rem; color:var(--text-muted);">(Replace with actual number)</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card reveal reveal-delay-3">
+            <div class="info-icon">🅿️</div>
+            <div>
+              <h4>Parking</h4>
+              <p>
+                Free street parking available directly outside the restaurant on B.B Road. Two-wheeler and four-wheeler friendly. No parking hassles.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card reveal reveal-delay-4">
+            <div class="info-icon">🚗</div>
+            <div>
+              <h4>How to Get Here</h4>
+              <p>
+                From Chikkaballapur bus stand, take the Vapasandra road. We're on B.B Road, opposite Kothanoor Gate — the gate right before SJCIT. Look for our board!
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Map + Note -->
+        <div class="reveal reveal-delay-2">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.3!2d77.7272!3d13.4349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19000000001%3A0x12345!2sSJCIT%2C%20Chikkaballapur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Shreyas Restaurant Location"
+            ></iframe>
+            <div class="map-note">
+              <span>📍</span>
+              <span>B.B Road, Opp. Kothanoor Gate, Vapasandra, Chikkaballapur (Near SJCIT)</span>
+            </div>
+          </div>
+
+          <!-- Quick Info Strip -->
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:20px;">
+            <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:18px; text-align:center;">
+              <div style="font-size:1.6rem; margin-bottom:6px;">🏍️</div>
+              <div style="font-size:0.78rem; font-weight:600; color:var(--text-primary); margin-bottom:3px;">2-Wheeler Parking</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Free · On B.B Road</div>
+            </div>
+            <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:18px; text-align:center;">
+              <div style="font-size:1.6rem; margin-bottom:6px;">🚗</div>
+              <div style="font-size:0.78rem; font-weight:600; color:var(--text-primary); margin-bottom:3px;">4-Wheeler Parking</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Street Parking Available</div>
+            </div>
+            <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:18px; text-align:center;">
+              <div style="font-size:1.6rem; margin-bottom:6px;">🎓</div>
+              <div style="font-size:0.78rem; font-weight:600; color:var(--text-primary); margin-bottom:3px;">Near SJCIT</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">5 min walk from campus</div>
+            </div>
+            <div style="background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:18px; text-align:center;">
+              <div style="font-size:1.6rem; margin-bottom:6px;">🪑</div>
+              <div style="font-size:0.78rem; font-weight:600; color:var(--text-primary); margin-bottom:3px;">Seating Capacity</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Comfortable for groups</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA STRIP ══════════════════════════════════════════ -->
+  <div class="cta-strip">
+    <div class="container">
+      <div class="section-tag reveal">Come Visit Us</div>
+      <h2 class="section-title reveal">Ready to Eat?</h2>
+      <p class="section-subtitle reveal">Walk in or reach out — we're always ready to serve you something wonderful.</p>
+      <div class="cta-actions reveal">
+        <a
+          href="https://wa.me/919999999999?text=Hi%20Shreyas%20Restaurant!%20I'd%20like%20to%20place%20an%20order."
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener"
+        >
+          <span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </span>
+          Order on WhatsApp
+        </a>
+        <a
+          href="https://maps.google.com/?q=SJCIT+Chikkaballapur"
+          class="directions-link"
+          target="_blank"
+          rel="noopener"
+        >
+          🗺️ Get Directions
+        </a>
+        <a href="menu.html" class="btn btn-outline">View Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="name">Shreyas</div>
+          <p>Family Restaurant · Vapasandra<br>Where every visit feels like a homecoming. Good food, warm hearts, honest prices.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Hours & Location</h5>
+          <p>🕐 11:00 AM – 11:00 PM<br>Daily</p>
+          <br>
+          <p>📍 B.B Road, Opp. Kothanoor Gate<br>Vapasandra, Chikkaballapur</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span class="accent">Shreyas Family Restaurant</span>. All rights reserved.</p>
+        <p>Made with ❤️ in Chikkaballapur</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a
+    href="https://wa.me/919999999999?text=Hi%20Shreyas%20Restaurant!%20I'd%20like%20to%20place%20an%20order."
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener"
+    aria-label="Order on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <span class="whatsapp-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </span>
+    <span>Order Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
